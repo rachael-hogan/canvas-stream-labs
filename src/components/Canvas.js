@@ -33,9 +33,11 @@ const CanvasTutorial = () => {
 
         const resizeCanvas = () => {
             const canvas = canvasRef.current;
+            // Set the canvas dimensions to match the window
             const windowWidth = window.innerWidth;
             const windowHeight = window.innerHeight;
 
+            //Dimensions must remain in a 16:9 ratio
             const width = windowWidth;
             const height = (width * 9) / 16;
 
